@@ -1,8 +1,8 @@
 local M = {}
 
 -- Variables
-M.display_width = tonumber(sys.get_config("display.width"))
-M.display_height = tonumber(sys.get_config("display.height"))
+M.display_width = sys.get_config_number("display.width")
+M.display_height = sys.get_config_number("display.height")
 M.aspect_ratio = M.display_width/M.display_height
 M.FOV = 42.5
 M.NEAR = 1
